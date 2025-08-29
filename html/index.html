@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Company Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <h2>Companies</h2>
+      <ul id="company-list"></ul>
+    </aside>
+    <main>
+      <header>
+        <h1 id="company-name"></h1>
+        <img id="company-logo" alt="Company Logo" />
+      </header>
+
+      <section class="details">
+        <div>
+          <h3>Growth Rate</h3>
+          <p id="growth-rate"></p>
+        </div>
+        <div>
+          <h3>Market Share</h3>
+          <p id="market-share"></p>
+        </div>
+        <div>
+          <h3>Employees</h3>
+          <p id="employees"></p>
+        </div>
+        <div>
+          <h3>ROI</h3>
+          <p id="roi"></p>
+        </div>
+      </section>
+
+        <canvas id="line-chart" width="600" height="300"></canvas>
+        <canvas id="pie-chart" width="400" height="400"></canvas>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
